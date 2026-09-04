@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL("https://artedavasnuevo.vercel.app"),
   title: "DAVA'S — Home Colección Japón",
   description: "Propuesta navegable para el lanzamiento de la Colección Japón y la nueva entrada al catálogo de DAVA'S.",
   openGraph: {
