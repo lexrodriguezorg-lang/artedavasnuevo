@@ -128,19 +128,11 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--orange); outlin
 }
 .hero-image.video-slide { background: #111820; }
 .hero-image.nido { background: #e8e1d7; }
-.hero-image.video-slide video { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+.hero-image.video-slide video { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .hero-image.nido video { object-fit: cover; }
 .hero-image.mecedoras { background: #111820; }
 .hero-image.mecedoras video,
-.hero-image.mecedoras picture img { object-fit: contain; object-position: center; }
-.hero-image.mecedoras::before {
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(14,21,29,.98), rgba(14,21,29,.48) 10%, transparent 21%, transparent 79%, rgba(14,21,29,.48) 90%, rgba(14,21,29,.98));
-  content: "";
-  pointer-events: none;
-}
+.hero-image.mecedoras picture img { object-fit: cover; object-position: center; }
 .hero-image.mecedoras.is-active::after {
   position: absolute;
   z-index: 1;
@@ -321,16 +313,16 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--orange); outlin
 .hero-lettering-kanazawa p { color: rgba(255,255,255,.92); text-shadow: 0 2px 18px rgba(0,0,0,.8); }
 .hero-lettering-aka .hero-lettering-display em { color: #9e1522; }
 .hero-lettering-nido {
-  top: clamp(102px, 12vh, 132px);
+  top: clamp(122px, 16vh, 172px);
   right: auto;
-  left: calc(49% - min(16vw, 270px));
-  width: min(32vw, 540px);
+  left: 52vw;
+  width: min(28vw, 500px);
   color: #17352f;
-  text-align: center;
+  text-align: left;
   transform: none;
 }
-.hero-lettering-nido p { justify-content: center; color: #17352f; text-shadow: none; }
-.hero-lettering-nido .hero-lettering-display { align-items: center; }
+.hero-lettering-nido p { justify-content: flex-start; color: #17352f; text-shadow: none; }
+.hero-lettering-nido .hero-lettering-display { align-items: flex-start; }
 .hero-lettering-nido .hero-lettering-display strong { color: #17352f; font-size: clamp(2.5rem, 3.8vw, 4.4rem); text-shadow: none; }
 .hero-lettering-nido .hero-lettering-display em { color: #b77a20; font-size: clamp(2.8rem, 4.6vw, 5.3rem); text-shadow: none; }
 .hero-lettering-nido small { margin-top: 16px; color: #17352f; text-shadow: none; }
